@@ -13,8 +13,8 @@ var images = [
 var box = document.querySelector('.box')
 var btn = document.querySelector('button')
 
-var random = Math.floor(Math.random()*images.length)
-var randomimage = images[random]
 btn.addEventListener('click',function(){
+    var random = Math.floor(Math.random()*images.length)
+    var randomimage = images[random]
 box.style.backgroundImage = `url(${randomimage})`
 })
